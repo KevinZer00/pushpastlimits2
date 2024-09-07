@@ -584,6 +584,10 @@ footer {
         padding: 50px;
     }
 
+    .landing-content h1 {
+        font-size: 3rem;
+    }
+
     .about-image {
         width: 200px;
         height: auto;

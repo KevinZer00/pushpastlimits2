@@ -129,112 +129,6 @@ header {
     background-color: #b59626;
 }
 
-/* About Section */
-#about {
-    padding: 70px 20px;
-    background-color: #111;
-}
-
-#about .content-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    gap: 50px;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.about-image {
-    flex: 1;
-    width: 100px;
-    height: auto;
-    object-position: top;
-    border-radius: 8px;
-}
-
-.about-text {
-    flex: 2;
-    max-width: 600px;
-}
-
-#about h2 {
-    margin-bottom: 30px;
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #FFD700;
-    border-bottom: 1px solid #FFD700;
-}
-
-#about p {
-    font-size: 1.25rem;
-    line-height: 1.8;
-}
-
-/* Testimonials Section */
-#testimonials {
-    padding: 70px 20px;
-    background-color: #282828;
-}
-
-#testimonials .content-wrapper {
-    max-width: 1200px;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    flex-wrap: wrap;
-}
-
-#testimonials h2 {
-    margin-bottom: 30px;
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #FFD700;
-    border-bottom: 1px solid #FFD700;
-}
-
-.testimonials-grid {
-    display: grid;
-    gap: 30px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-.testimonial {
-    background-color: #111;
-    padding: 20px;
-    border-radius: 8px;
-    border-left: 5px solid #FFD700;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-    position: relative;
-    min-height: 300px;
-}
-
-.testimonial-image {
-    width: 100%;
-    max-height: auto;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-.testimonial p {
-    font-size: 1.25rem;
-    margin-bottom: 10px;
-    color: #ddd;
-    text-align: justify;
-}
-
-.testimonial span {
-    display: block;
-    margin-top: auto;
-    font-weight: bold;
-    color: #FFD700;
-    text-align: right;
-    width: 100%;
-}
-
 /* Package Section Styling */
 #packages {
     padding: 70px 20px;
@@ -256,7 +150,6 @@ header {
     margin: auto;
 }
 
-
 .package {
     background-color: #222;
     color: white;
@@ -265,7 +158,6 @@ header {
     border-radius: 8px;
     text-align: center;
     transition: transform 0.3s;
-    margin-bottom: 20px;
     position: relative;
     flex: 1 1 300px;
 }
@@ -380,7 +272,7 @@ header {
 .faq-question {
     background-color: transparent;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     width: 100%;
     text-align: left;
     border: none;
@@ -388,9 +280,8 @@ header {
     cursor: pointer;
     outline: none;
     transition: color 0.3s ease;
-    max-width: 300px;
-    border-bottom: 1px solid white;
-
+    max-width: 370px;
+    border-bottom: 2px dotted white;
 }
 
 .faq-question:hover {
@@ -401,7 +292,7 @@ header {
     display: none;
     padding: 10px 0;
     color: #FFD700;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     line-height: 1.6;
 }
 
@@ -494,17 +385,6 @@ footer {
 
 @media (max-width: 1280px) {
 
-    #about {
-        padding: 50px;
-    }
-
-    .about-image {
-        width: 100px;
-        height: auto;
-        min-width: 400px;
-        min-height: 500px;
-    }
-
     #testimonials {
         padding: 50px;
     }
@@ -547,10 +427,7 @@ footer {
         display: block;
     }
 
-    #about .content-wrapper {
-        display: flex;
-        flex-direction: column;
-    }
+   
 }
 
 @media (max-width: 850px) {
@@ -588,12 +465,6 @@ footer {
         font-size: 3rem;
     }
 
-    .about-image {
-        width: 200px;
-        height: auto;
-        min-width: 100%;
-        min-height: 200px;
-    }
 
     #testimonials {
         padding: 25px;

@@ -1,0 +1,167 @@
+/* About Styling */
+#about {
+    padding: 70px 20px;
+    background-color: #111;
+    color: #fff;
+}
+
+#about .content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: block;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 70px;
+    align-items: flex-start;
+}
+
+#about h2 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #FFD700;
+    border-bottom: 1px solid #FFD700;
+    text-align: left;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.about-image {
+    flex: 0;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.about-text {
+    flex: 2;
+    max-width: 800px;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.about-text h3 {
+    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #FFD700;
+}
+
+.about-text p {
+    font-size: 1.5rem;
+}
+
+.about-text strong {
+    color: #FFD700;
+}
+
+/* Why Choose Us Section */
+#why-choose-us {
+    padding: 70px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+#why-choose-us .content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#why-choose-us h2 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #FFD700;
+    border-bottom: 1px solid #FFD700;
+}
+
+.reasons-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.reason {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+    text-align: center;
+    position: relative;
+    max-width: 400px;
+    height: 300px;
+}
+
+.reason i {
+    font-size: 3rem;
+    color: #FFD700;
+    margin-bottom: 10px;
+}
+
+.reason h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #FFD700;
+}
+
+.reason p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+
+@media (max-width: 1280px) {
+    #about {
+        margin-top: 20px;
+        padding: 50px;
+    }
+
+    .about-image {
+        width: 80%;
+        max-width: 400px;
+    }
+
+    #why-choose-us {
+        padding: 50px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .about-content {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .about-image {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .reasons-grid {
+        grid-template-columns: repeat(2, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 850px) {
+    .reasons-grid {
+        grid-template-columns: repeat(1, minmax(250px, 1fr));
+        justify-items: center;
+    }
+
+    .reason {
+        max-width: 400px;
+    }
+}
+
+
+
+
+

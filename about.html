@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Push Past Limits Coaching</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="about.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <img src='images/logo.png' class="logo"></div>
+            <div class="burger-menu" id="burger-menu">
+                &#9776; <!-- Burger icon -->
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="index.html#packages">Packages</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="content-wrapper">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="images/coach.webp" alt="Trainer" class="about-image">
+                <div class="about-text">
+                    <p>I'm <strong>Andrei Arroyo</strong>, a certified personal trainer dedicated to helping you become
+                        the best version of yourself. With over <strong>[X]</strong> years of experience in the fitness
+                        industry, I specialize in pushing individuals beyond their limits through a unique approach that
+                        combines science-based techniques with personalized coaching.</p>
+
+                    <br>
+                    <p>My <strong>philosophy</strong> is simple: no two bodies are the same, and neither should their
+                        training programs be. I craft <strong>unique training regimens</strong> tailored to your
+                        specific needs, blending strength, agility, endurance, and flexibility exercises that not only
+                        transform your body but also empower your mind.</p>
+
+                    <p>Whether you're a beginner taking your first steps into fitness or an athlete aiming for new
+                        heights, I provide the <strong>motivation, guidance, and accountability</strong> needed to
+                        achieve your goals.</p>
+
+                    <br>
+                    <p>I founded Push Past Limits Coaching as a way to share my knowledge and experience with the world.
+                        I know firsthand just how difficult starting a fitness journey really is. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Why Choose Us Section -->
+    <section id="why-choose-us">
+        <div class="content-wrapper">
+            <h2>Why Choose Push Past Limits?</h2>
+            <div class="reasons-grid">
+                <div class="reason">
+                    <i class="fas fa-users"></i>
+                    <h3>Continuous Support</h3>
+                    <p>Personal support regardless of setbacks or other circumstances.</p>
+                </div>
+                <div class="reason">
+                    <i class="fas fa-dumbbell"></i>
+                    <h3>Personalized Plans</h3>
+                    <p>Custom workouts designed to meet your unique goals.</p>
+                </div>
+                <div class="reason">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Proven Results</h3>
+                    <p>Measurable progress and continuous support to keep you motivated.</p>
+                </div>
+                <div class="reason">
+                    <i class="fas fa-clock"></i>
+                    <h3>Flexible Scheduling</h3>
+                    <p>Training sesions that fit into your busy lifestyle, whether early mornings or late nights.</p>
+                </div>
+                <div class="reason">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Holistic Approach</h3>
+                    <p>A comprehensive approach that includes fitness, nutrition, and mental well-being.</p>
+                </div>
+                <div class="reason">
+                    <i class="fas fa-flask"></i>
+                    <h3>Training Techniques</h3>
+                    <p>Utilize the latest fitness trends and science-backed methods to achieve maximum results
+                        efficiently.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="content-wrapper">
+            <h2>Ready to Transform Your Physique?</h2>
+            <p>Take the first step toward achieving your fitness goals and book a free consultation to discuss your
+                personalized plan!</p>
+            <a href="#" class="btn">Schedule Consultation</a>
+
+            <div class="location-container">
+                <!-- Address Section -->
+                <div class="address">
+                    <h2>Where We're Located</h2>
+                    <h3>Fitness System Land Park</h3>
+                    <p>1250 Sutterville Rd, Sacramento, CA 95822<br>United States</p>
+                </div>
+
+
+                <!-- Map Section -->
+                <div id="map" class="map"></div>
+            </div>
+    </section>
+
+
+
+    <footer>
+        <p>© 2024 Push Past Limits Coaching. All rights reserved.</p>
+        <div class="icons">
+            <a href="https://www.instagram.com/your-profile" target="_blank" class="icon"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@your-profile" target="_blank" class="icon"><i
+                    class="fab fa-tiktok"></i></a>
+            <a href="https://www.x.com/@your-profile" target="_blank" class="icon"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>

@@ -99,15 +99,15 @@ header {
 }
 
 .image1 {
-    background-image: url('images/landing1-photoaidcom-greyscale.webp');
+    background-image: url('images/landing1.jpg');
 }
 
 .image2 {
-    background-image: url('images/landing2.webp');
+    background-image: url('images/landing2.jpg');
 }
 
 .image3 {
-    background-image: url('images/landing3-photoaidcom-greyscale.webp');
+    background-image: url('images/landing3.jpg');
 }
 
 .overlay {

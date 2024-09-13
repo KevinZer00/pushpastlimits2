@@ -438,11 +438,11 @@ footer {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 100px;
+        top: 90px;
         right: 0;
         background-color: black;
         width: 100%;
-        padding: 50px;
+        padding: 30px;
         box-sizing: border-box;
         transition: transform 0.3s ease-in-out;
         border-top: 2px solid #FFD700;
@@ -477,8 +477,8 @@ footer {
     }
 
     .nav-links {
-        top: 90px;
-        padding: 40px;
+        top: 80px;
+        padding: 30px;
     }
 
 

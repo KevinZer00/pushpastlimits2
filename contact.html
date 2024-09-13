@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Push Past Limits Coaching</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <img src = 'images/logo.png' class="logo"></div>
+            <div class="burger-menu" id="burger-menu">
+                &#9776; <!-- Burger icon -->
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="index.html#packages">Packages</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+     <!-- Contact Form -->
+     <section id="contact-form">
+        <div class="content-wrapper">
+            <h2>Contact the Coach</h2>
+            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                <!-- Include the Web3Forms access key -->
+                <input type="hidden" name="access_key" value="dd553559-6981-4962-b23c-225a9fa0e425">
+
+                <input type="text" name="name" placeholder="Your Name" class="short-input" required>
+                <input type="email" name="email" placeholder="Your Email" class = "short-input" required>
+                <textarea name="message" placeholder="Your Message" rows="5" class = "long-input" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="content-wrapper">
+            <h2>Ready to Transform Your Physique?</h2>
+            <p>Take the first step toward achieving your fitness goals and book a free consultation to discuss your
+                personalized plan!</p>
+            <a href="#" class="btn">Schedule Consultation</a>
+
+            <div class="location-container">
+                <!-- Address Section -->
+                <div class="address">
+                    <h2>Where We're Located</h2>
+                    <h3>Fitness System Land Park</h3>
+                    <p>1250 Sutterville Rd, Sacramento, CA 95822<br>United States</p>
+
+                    <br>
+                    <h2>Contact Information</h2>
+                    <p>Phone: 916-123-4567</p>
+                    <p>Email: pushpastlimitscoaching@gmail.com</p>
+                </div>
+
+                <!-- Map Section -->
+                <div id="map" class="map"></div>
+            </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Push Past Limits Coaching. All rights reserved.</p>
+        <div class="icons">
+            <a href="https://www.instagram.com/your-profile" target="_blank" class="icon"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@your-profile" target="_blank" class="icon"><i
+                    class="fab fa-tiktok"></i></a>
+            <a href="https://www.x.com/@your-profile" target="_blank" class="icon"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="contact.js"></script>
+
+</body>
+
+</html>

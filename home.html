@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Push Past Limits Coaching</title>
+    <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo"></a>
+            <div class="burger-menu" id="burger-menu">
+                &#9776; <!-- Burger icon -->
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="home.html#packages">Packages</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Landing Page -->
+    <section id="landing">
+        <div class="background-wrapper">
+            <div class="image-container">
+                <div class="image image1"></div>
+                <div class="image image2"></div>
+                <div class="image image3"></div>
+            </div>
+            <div class="overlay"></div>
+        </div>
+        <div class="landing-content">
+            <h1>Push Past Limits: Defy Boundaries, Embrace the Grind!</h1>
+            <p>with Coach Andrei Arroyo</p>
+            <a href="#about" class="btn">Schedule Consultation</a>
+        </div>
+    </section>
+
+
+
+    <!-- Packages Section -->
+    <section id="packages">
+        <div class="content-wrapper">
+            <h2>Coaching Packages</h2>
+            <div class="packages-grid">
+                <!-- Online Coaching Package -->
+                <div class="package">
+                    <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        alt="Online Coaching" class="package-image">
+                    <h3>Online Coaching</h3>
+                    <p>Access personalized plans and support from anywhere. Stay accountable and motivated.</p>
+                    <div class="features">
+                        <div class="feature"
+                            data-tooltip="Get a workout plan that evolves with you. Designed specifically for your fitness level and goals, these plans ensure you’re always challenged and progressing towards your peak performance.">
+                            <i class="fas fa-dumbbell"></i>
+                            <span>Custom Workout Plans</span>
+                        </div>
+                        <div class="feature"
+                            data-tooltip="Receive meal plans and dietary recommendations tailored to complement your workouts. Fuel your body with the right nutrients to maximize results and feel energized every day.">
+                            <i class="fas fa-apple-alt"></i>
+                            <span>Nutrition Guidance</span>
+                        </div>
+                        <div class="feature"
+                            data-tooltip="Stay connected and motivated with 24/7 support. Reach out via email, chat, or video calls whenever you need advice, encouragement, or answers to your questions.">
+                            <i class="fas fa-comments"></i>
+                            <span>24/7 Support</span>
+                        </div>
+                        <div class="feature"
+                            data-tooltip="Regularly track your progress with detailed assessments and feedback. Celebrate milestones and adjust your plan to keep pushing towards your ultimate fitness goals.">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Progress Tracking</span>
+                        </div>
+                    </div>
+                    <p class="price">$99/month</p>
+                </div>
+
+                <!-- In-Person Coaching Package -->
+                <div class="package">
+                    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="In-Person Coaching" class="package-image">
+                    <h3>In-Person Coaching</h3>
+                    <p>Get hands-on guidance and personalized workouts to achieve your fitness goals.</p>
+                    <div class="features">
+                        <div class="feature"
+                            data-tooltip="Benefit from one-on-one training sessions that are tailored to your unique fitness level and goals. Get the personalized attention you need to ensure maximum effectiveness.">
+                            <i class="fas fa-user-friends"></i>
+                            <span>One-on-One Sessions</span>
+                        </div>
+                        <div class="feature"
+                            data-tooltip="Receive real-time feedback on your form and technique to prevent injuries and ensure you're performing exercises correctly and efficiently.">
+                            <i class="fas fa-bullseye"></i>
+                            <span>Hands-On Guidance</span>
+                        </div>
+                        <div class="feature"
+                            data-tooltip="Experience workouts that are specifically designed for your goals, whether it’s building muscle, increasing endurance, or achieving overall fitness.">
+                            <i class="fas fa-heartbeat"></i>
+                            <span>Customized Routines</span>
+                        </div>
+                        <div class="feature"
+                            data-tooltip="Get comprehensive advice on diet and lifestyle changes that enhance your fitness journey, helping you stay balanced and healthy inside and out.">
+                            <i class="fas fa-balance-scale"></i>
+                            <span>Nutrition & Lifestyle</span>
+                        </div>
+                    </div>
+                    <p class="price">$149/session</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <div class="content-wrapper">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <button class="faq-question">
+                    What types of training do you offer?
+                    <span class="faq-icon">▼</span>
+                </button>
+                <div class="faq-answer">
+                    <p>We offer both online and in-person coaching sessions, customized to fit your fitness goals.
+                        Whether you're looking for strength training, endurance building, or weight loss, we've got you
+                        covered!</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    How do I schedule a consultation?
+                    <span class="faq-icon">▼</span>
+                </button>
+                <div class="faq-answer">
+                    <p>You can easily schedule a consultation by clicking the "Schedule Consultation" button above or
+                        visiting our contact page for more options.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    Do you provide nutrition guidance?
+                    <span class="faq-icon">▼</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes, all our packages include nutrition guidance tailored to your specific needs and fitness
+                        goals.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    What types of training do you offer?
+                    <span class="faq-icon">▼</span>
+                </button>
+                <div class="faq-answer">
+                    <p>We offer both online and in-person coaching sessions, customized to fit your fitness goals.
+                        Whether you're looking for strength training, endurance building, or weight loss, we've got you
+                        covered!</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    How do I schedule a consultation?
+                    <span class="faq-icon">▼</span>
+                </button>
+                <div class="faq-answer">
+                    <p>You can easily schedule a consultation by clicking the "Schedule Consultation" button above or
+                        visiting our contact page for more options.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    Do you provide nutrition guidance?
+                    <span class="faq-icon">▼</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes, all our packages include nutrition guidance tailored to your specific needs and fitness
+                        goals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="content-wrapper">
+            <h2>Ready to Transform Your Physique?</h2>
+            <p>Take the first step toward achieving your fitness goals and book a free consultation to discuss your
+                personalized plan!</p>
+            <a href="#" class="btn">Schedule Consultation</a>
+
+            <div class="location-container">
+                <!-- Address Section -->
+                <div class="address">
+                    <h2>Where We're Located</h2>
+                    <h3>Fitness System Land Park</h3>
+                    <p>1250 Sutterville Rd, Sacramento, CA 95822<br>United States</p>
+
+                    <br>
+                    <h2>Contact Information</h2>
+                    <p>Phone: 916-123-4567</p>
+                    <p>Email: pushpastlimitscoaching@gmail.com</p>
+                </div>
+
+                <!-- Map Section -->
+                <div id="map" class="map"></div>
+            </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Push Past Limits Coaching. All rights reserved.</p>
+        <div class="icons">
+            <a href="https://www.instagram.com/your-profile" target="_blank" class="icon"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@your-profile" target="_blank" class="icon"><i
+                    class="fab fa-tiktok"></i></a>
+            <a href="https://www.x.com/@your-profile" target="_blank" class="icon"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>

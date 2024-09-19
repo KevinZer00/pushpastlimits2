@@ -37,7 +37,14 @@ header {
 }
 
 .logo {
-    width: 50px;
+    background-image: url('images/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    height: 70px;
+    width: 100%;
 }
 
 .nav-links {
@@ -305,8 +312,17 @@ header {
     cursor: pointer;
     outline: none;
     transition: color 0.3s ease;
-    max-width: 370px;
     border-bottom: 2px dotted white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq-icon {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+.faq-item.active .faq-icon{
+    transform: rotate(180deg);
 }
 
 .faq-question:hover {

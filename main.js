@@ -7,10 +7,11 @@ document.getElementById('burger-menu').addEventListener('click', function () {
 // FAQ questions expand functionality
 document.querySelectorAll('.faq-question').forEach(button => {
     button.addEventListener('click', () => {
-        const faqAnswer = button.nextElementSibling;
+        const faqItem = button.parentElement;
+        const faqAnswer = faqItem.querySelector('.faq-answer');
 
         // toggle active state for clicked question
-        button.classList.toggle('activ');
+        faqItem.classList.toggle('active');
 
         // expand and collapse answer
         if (faqAnswer.style.display === 'block') {
@@ -38,7 +39,7 @@ document.querySelectorAll('.feature').forEach(feature => {
 
     // update tooltip position as the mouse moves; makes it follow cursor
     feature.addEventListener('mousemove', (e) => {
-        tooltip.style.left = e.pageX + 10 + 'px'; // setting X position of tooltip
+        tooltip.style.left = e.pageX + -150 + 'px'; // setting X position of tooltip
         tooltip.style.top = e.pageY + 10 + 'px'; // setting Y position of tooltip
     });
 
